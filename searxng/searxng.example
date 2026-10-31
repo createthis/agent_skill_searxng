@@ -1,0 +1,14 @@
+# SearXNG endpoint config for the searxng agent skill.
+#
+# Copy this file to `searxng.local` (same directory) and fill in the base URL
+# of your SearXNG instance — no trailing slash, no /search path.
+# searxng.local is gitignored and never ships.
+#
+# Alternatively set the SEARXNG_URL environment variable (takes priority),
+# or create ~/.config/searxng-search/endpoint with the same content.
+#
+# No instance yet? The easiest one:
+#   docker run -d --name searxng -p 8086:8080 searxng/searxng
+#   SEARXNG_URL=http://localhost:8086
+
+SEARXNG_URL=http://your-instance:8086
